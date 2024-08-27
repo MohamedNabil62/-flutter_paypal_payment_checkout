@@ -1,7 +1,9 @@
-import 'package:flutter/material.dart';
-void main() {
-  //Stripe.publishableKey = ApiKeys.puplishableKey;
 
+import 'package:flutter/material.dart';
+
+import 'Features/checkout/presentation/views/my_cart_view.dart';
+
+void main() {
   runApp(const CheckoutApp());
 }
 
@@ -16,8 +18,3 @@ class CheckoutApp extends StatelessWidget {
     );
   }
 }
-
-// PaymentIntentModel create payment intent(amount , currency , customerId)
-// keySecret createEphemeralKey( customerId)
-// initPaymentSheet (merchantDisplayName , intentClientSecret , ephemeralKeySecret)
-// presentPaymentSheet()
